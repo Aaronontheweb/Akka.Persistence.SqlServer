@@ -15,12 +15,12 @@
 
   <ItemGroup>
     <PackageReference Include="Akka.Persistence.Sql.Common" Version="$(AkkaVersion)" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == '$(NetStandardLibVersion)'">
     <PackageReference Include="Microsoft.Data.SqlClient">
-      <Version>4.8.2</Version>
+      <Version>3.0.0</Version>
     </PackageReference>
   </ItemGroup>
 </Project>
